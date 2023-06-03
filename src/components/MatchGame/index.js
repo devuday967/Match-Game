@@ -72,8 +72,8 @@ class MatchGame extends Component {
       imgUrl: newImgUrl,
       id : "",
     })
-    
-    
+    const timerId = setInterval(this.tick, 1000)
+    this.setState({id : timerId})
   }
 
   componentWillUnmount() {
